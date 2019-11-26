@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a  class="header__logo-link" href="/">
+            <img class="header__logo-img" src="./logo.png" alt="logo">
+        </a>
+        <div class="header__content">
+            <div class="header__content-top">
+                <div class="product-list">
+                    <button class="product-list__button">Producten</button>
+                </div>
+                <form class="search">
+                    <input type="text" placeholder="Zoek product" class="search__input">
+                    <button type="submit" class="search__button">
+                        <i class="search__icon"></i>
+                    </button>
+                </form>
+                <div class="tax-state">
+                    <input class="tax-state__input" name="excl-btw" type="checkbox" id="tax-state__input"/>
+                    <label class="tax-state__label" for="tax-state__input">Excl. BTW</label>
+                </div>
+                <form class="auth">
+                    <button class="auth__button" type="submit">
+                        <i class="auth__icon"></i>
+                        <span class="auth__action-label">inloggen</span>
+                    </button>
+                </form>
+                <button class="cart">
+                    <i class="cart__icon"></i>
+                    <span class="cart__amount">2</span>
+                </button>
+            </div>
+            <ul class="benefits">
+                <li class="benefits__service-item">
+                    <i class="benefits__service-icon"></i>
+                    <span class="benefits__text">Uitstekende klantenservice</span>
+                </li>
+                <li class="benefits__shipping-item">
+                    <i class="benefits__shipping-icon"></i>
+                    <span class="benefits__text">Gratis levering of afhalen in onze shops</span>
+                </li>
+                <li class="benefits__call-item">
+                    <i class="benefits__call-icon"></i>
+                    <span class="benefits__text">Gratis levering of afhalen in onze shops</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <aside class="sidebar">
+            <ul class="menu-list">
+                <li class="menu-list__item"><a href="#">Behuizingen</a></li>
+                <li class="menu-list__item"><a href="#">Bevestigingsmateriaal</a></li>
+                <li class="menu-list__item"><a href="#">Draad en kabel</a></li>
+                <li class="menu-list__item"><a href="#">Domotica</a></li>
+                <li class="menu-list__item"><a href="#">Schakelmateriaal</a></li>
+                <li class="menu-list__item"><a href="#">Rook- en hittemelders</a></li>
+                <li class="menu-list__item"><a href="#">Verdeelsystemen</a></li>
+                <li class="menu-list__item"><a href="#">Lichtbronnen</a></li>
+                <li class="menu-list__item"><a href="#">LED-lichtbronnen</a></li>
+                <li class="menu-list__item"><a href="#">Installatiemateriaal</a></li>
+                <li class="menu-list__item"><a href="#">Kabeldraagsystemen</a></li>
+                <li class="menu-list__item"><a href="#">Armaturen</a></li>
+                <li class="menu-list__item"><a href="#">Data en multimedia</a></li>
+                <li class="menu-list__item"><a href="#">Ruimte-oplossingen</a></li>
+                <li class="menu-list__item"><a href="#">Lichtregeling</a></li>
+            </ul>
+        </aside>
+        <div class="content">
+            <section class="banner banner_first">
+                <div class="banner__description">
+                    <h2 class="banner__header">Gehoorbescherming 20% korting</h2>
+                    <button class="banner__button">Bestel nu</button>
+                </div>
+                <img src="./gehoor.png" alt="gehoor" class="banner__img">
+            </section>
+            <section class="schedule">
+                <h5 class="schedule__header">Heb je een vraag? Wij staan voor je klaar!</h5>
+                <ul class="schedule__list">
+                    <li class="schedule__working-hours">
+                        <i class="schedule__icon"></i>
+                        <h5 class="schedule__header">Openingstijden: </h5>
+                        <div class="schedule__weekdays">
+                            <span class="schedule__weekdays-days">Ma-Vr</span>
+                            <span class="schedule__weekdays-hours">08.00 uur - 18.00 uur</span>
+                        </div>
+                        <div class="schedule__weekends">
+                            <span class="schedule__weekends-days">Za</span>
+                            <span class="schedule__weekends-hours">08.00 uur - 16.00 uur</span>
+                        </div>
+                    </li>
+                    <li class="schedule__phones">
+                        <i class="schedule__phones-icon"></i>
+                        <h5 class="schedule__header">Telefonisch bereikbaar:</h5>
+                        <div class="schedule__weekdays">
+                            <span class="schedule__weekdays-days">Ma-Vr</span>
+                            <span class="schedule__weekdays-hours">08.00 uur - 18.00 uur</span>
+                        </div>
+                        <div class="schedule__weekends">
+                            <span class="schedule__weekends-days">Za</span>
+                            <span class="schedule__weekends-hours">08.00 uur - 16.00 uur</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="banner">
+                <div class="banner__description">
+                    <h2 class="banner__header">Schuurmachines Vanaf € 150,-</h2>
+                    <button class="banner__button">Bestel nu</button>
+                </div>
+                <img src="./Schuurmachines.png" alt="Schuurmachines" class="banner__img">
+            </section>
+            <section class="banner">
+                <div class="banner__description">
+                    <h2 class="banner__name">Rookmelders Vanaf € 50,-</h2>
+                    <button class="banner__button">Bestel nu</button>
+                </div>
+                <img src="./Rookmelders.png" alt="Rookmelders" class="banner__img">
+            </section>
+        </div>
+    </main>
+</body>
+</html>
