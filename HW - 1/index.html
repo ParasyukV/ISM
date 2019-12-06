@@ -8,13 +8,20 @@
 </head>
 <body>
     <header class="header">
-        <a  class="header__logo-link" href="/">
+        <a class="header__logo-link" href="/">
             <img class="header__logo-img" src="./logo.png" alt="logo">
         </a>
         <div class="header__content">
             <div class="header__content-top">
                 <div class="product-list">
-                    <button class="product-list__button">Producten</button>
+                    <label for="product-list">Producten</label>
+                    <select id="product-list" name="product-list" class="product-list-form">
+                        <option value="1">Industrial Electrical</option>
+                        <option value="2">Goods</option>
+                        <option value="3">Garden</option>
+                        <option value="4">Kitchen</option>
+                        <option value="5">Auto</option>
+                    </select>
                 </div>
                 <form class="search">
                     <input type="text" placeholder="Zoek product" class="search__input">
@@ -23,7 +30,7 @@
                     </button>
                 </form>
                 <div class="tax-state">
-                    <input class="tax-state__input" name="excl-btw" type="checkbox" id="tax-state__input"/>
+                    <input class="tax-state__input" name="excl-btw" type="checkbox" id="tax-state__input" />
                     <label class="tax-state__label" for="tax-state__input">Excl. BTW</label>
                 </div>
                 <form class="auth">
@@ -56,21 +63,21 @@
     <main class="container">
         <aside class="sidebar">
             <ul class="menu-list">
-                <li class="menu-list__item"><a href="#">Behuizingen</a></li>
-                <li class="menu-list__item"><a href="#">Bevestigingsmateriaal</a></li>
-                <li class="menu-list__item"><a href="#">Draad en kabel</a></li>
-                <li class="menu-list__item"><a href="#">Domotica</a></li>
-                <li class="menu-list__item"><a href="#">Schakelmateriaal</a></li>
-                <li class="menu-list__item"><a href="#">Rook- en hittemelders</a></li>
-                <li class="menu-list__item"><a href="#">Verdeelsystemen</a></li>
-                <li class="menu-list__item"><a href="#">Lichtbronnen</a></li>
-                <li class="menu-list__item"><a href="#">LED-lichtbronnen</a></li>
-                <li class="menu-list__item"><a href="#">Installatiemateriaal</a></li>
-                <li class="menu-list__item"><a href="#">Kabeldraagsystemen</a></li>
-                <li class="menu-list__item"><a href="#">Armaturen</a></li>
-                <li class="menu-list__item"><a href="#">Data en multimedia</a></li>
-                <li class="menu-list__item"><a href="#">Ruimte-oplossingen</a></li>
-                <li class="menu-list__item"><a href="#">Lichtregeling</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Behuizingen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Bevestigingsmateriaal</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Draad en kabel</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Domotica</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Schakelmateriaal</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Rook- en hittemelders</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Verdeelsystemen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Lichtbronnen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">LED-lichtbronnen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Installatiemateriaal</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Kabeldraagsystemen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Armaturen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Data en multimedia</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Ruimte-oplossingen</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Lichtregeling</a></li>
             </ul>
         </aside>
         <div class="content">
@@ -79,7 +86,7 @@
                     <h2 class="banner__header">Gehoorbescherming 20% korting</h2>
                     <button class="banner__button">Bestel nu</button>
                 </div>
-                <img src="./gehoor.png" alt="gehoor" class="banner__img">
+                <img src="./img/gehoor.png" alt="gehoor" class="banner__img">
             </section>
             <section class="schedule">
                 <h5 class="schedule__header">Heb je een vraag? Wij staan voor je klaar!</h5>
@@ -115,16 +122,143 @@
                     <h2 class="banner__header">Schuurmachines Vanaf € 150,-</h2>
                     <button class="banner__button">Bestel nu</button>
                 </div>
-                <img src="./Schuurmachines.png" alt="Schuurmachines" class="banner__img">
+                <img src="./img/shuurmachine.png" alt="Schuurmachines" class="banner__img">
             </section>
             <section class="banner">
                 <div class="banner__description">
                     <h2 class="banner__name">Rookmelders Vanaf € 50,-</h2>
                     <button class="banner__button">Bestel nu</button>
                 </div>
-                <img src="./Rookmelders.png" alt="Rookmelders" class="banner__img">
+                <img src="./img/rook.png" alt="Rookmelders" class="banner__img">
             </section>
         </div>
+        <article class="slider">
+            <h2 class="slider__header">Bestsellers</h2>
+            <ul class="slider__products">
+                <li class="slider__product-item">
+                    <img src="./img/shuurmachine.png" alt="shuurmachine image" class="slider__product-image">
+                    <p class="slider__product-name">Schuurmachine FERM</p>
+                    <p class="slider__product-id">Ak450970</p>
+                    <p class="slider__product-price">€ 150,-</p>
+                </li>
+                <li class="slider__list-item">
+                    <img src="./img/rook.png" alt="Rookmelder image" class="slider__product-image">
+                    <p class="slider__product-name">Rookmelder Special</p>
+                    <p class="slider__product-id">Ak450970</p>
+                    <p class="slider__product-price">€ 50,-</p>
+                </li>
+                <li class="slider__list-item">
+                    <img src="./img/shuurmachine.png" alt="shuurmachine image" class="slider__product-image">
+                    <p class="slider__product-name">Schuurmachine FERM</p>
+                    <p class="slider__product-id">Ak450970</p>
+                    <p class="slider__product-price">€ 150,-</p>
+                </li>
+                <li class="slider__list-item">
+                    <img src="./img/rook.png" alt="Rookmelder image" class="slider__product-image">
+                    <p class="slider__product-name">Rookmelder Special</p>
+                    <p class="slider__product-id">Ak450970</p>
+                    <p class="slider__product-price">€ 50,-</p>
+                </li>
+                <li class="slider__list-item">
+                    <img src="./img/shuurmachine.png" alt="shuurmachine image" class="slider__product-image">
+                    <p class="slider__product-name">Schuurmachine FERM</p>
+                    <p class="slider__product-id">Ak450970</p>
+                    <p class="slider__product-price">€ 150,-</p>
+                </li>
+            </ul>
+        </article>
+        <div class="articles">
+            <article class="articles__item">
+                <h2 class="articles__item-header">Nachtbezorging</h2>
+                <p class="articles__item-text">Vandaag besteld vannacht al in huis</p>
+                <img src="./img/man1.png" alt="article image" class="articles__item-img">
+            </article>
+            <article class="articles__item">
+                <h2 class="articles__item-header">Nachtbezorging</h2>
+                <p class="articles__item-text">Vandaag besteld vannacht al in huis</p>
+                <img src="./img/man2.png" alt="article image" class="articles__item-img">
+            </article>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <nav class="footer__nav">
+                <h3 class="footer__nav-header">Over bedrijf</h3>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Assortiment</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Zakelijke klanten</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Nieuws</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__nav">
+                <h3 class="footer__nav-header">Klantenservice</h3>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Bestellen</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Betalen</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Retourneren</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Bezorgen</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Afhalen</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Contact</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">Nieuwsbrief</a></li>
+                </ul>
+            </nav>
+            <article class="subscription">
+                <h3 class="subscription__header">Nieuwsbrief</h3>
+                <form class="subscription__form">
+                    <input type="email" name="email-subs" placeholder="E-mailadres" class="subscription__input">
+                    <button type="submit" class="subscription__button">Aanmelden</button>
+                </form>
+            </article>
+            <ul class="delivery">
+                <li class="delivery__item">
+                    <a class="delivery__link" href="#">
+                        <img class="delivery__image" src="./img/iban-ideal.png" alt="iban">
+                    </a>
+                </li>
+                <li class="delivery__item">
+                    <a class="delivery__link" href="#">
+                        <img class="delivery__image" src="./img/iban-ideal.png" alt="ideal">
+                    </a>
+                </li>
+                <li class="delivery__item">
+                    <a class="delivery__link" href="#">
+                        <img class="delivery__image" src="./img/dhl.png" alt="dhl">
+                    </a>
+                </li>
+                <li class="delivery__item">
+                    <a class="delivery__link" href="#">
+                        <img class="delivery__image" src="./img/winkel.png" alt="thuiswinkel">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <ul class="legal-list">
+                <li class="legal-list__item"><a class="legal-list__link" href="#">Algemene voorwarden</a></li>
+                <li class="legal-list__item"><a class="legal-list__link" href="#">Privacy</a></li>
+                <li class="legal-list__item"><a class="legal-list__link" href="#">Cookies</a></li>
+                <li class="legal-list__item"><a class="legal-list__link" href="#">Disclaimer</a></li>
+            </ul>
+            <div class="rating">
+                <div class="rating__bar">
+                    <input class="rating__input" id="ratingValue5" type="radio" value="5" name="rating">
+                    <label class="rating__label" for="ratingValue5"></label>
+
+                    <input class="rating__input" id="ratingValue4" type="radio" value="4" name="rating">
+                    <label class="rating__label" for="ratingValue4"></label>
+
+                    <input class="rating__input" id="ratingValue3" type="radio" value="3" name="rating">
+                    <label class="rating__label" for="ratingValue3"></label>
+
+                    <input class="rating__input" id="ratingValue2" type="radio" value="2" name="rating">
+                    <label class="rating__label" for="ratingValue2"></label>
+
+                    <input class="rating__input" id="ratingValue1" type="radio" value="1" name="rating">
+                    <label class="rating__label" for="ratingValue1"></label>
+                </div>
+                <p class="rating__status">1.011 beoordelingen</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
